@@ -1,7 +1,7 @@
 # Rencana Web Portfolio: Stephen Prasetya Chrismawan
 
 > Dokumen perencanaan untuk portfolio interaktif dengan animasi 2D dan JavaScript.
-> Disusun: 29 September 2026 · Status: **Draf untuk ditinjau pemilik**
+> Disusun: 29 September 2026 · Revisi 2: keputusan pemilik sudah dimasukkan (lihat §11) · Status: **Siap dikerjakan, menunggu data LinkedIn**
 
 ---
 
@@ -9,12 +9,14 @@
 
 | Item | Keputusan yang diusulkan |
 |---|---|
-| **Positioning** | *Odoo Developer & AI Researcher*, "Systems, made human." |
+| **Nama di situs** | **Stephen Prasetya Chrismawan** (menggantikan `stevewithcode.net`) |
+| **Positioning** | *Odoo Developer & AI Researcher*, mahasiswa S2 Master of Computer Science UGM, "Systems, made human." |
 | **Konsep visual** | Portfolio 2D bertema *simulation lab*: grid, agen, kurva, dan jadwal yang bergerak |
 | **Tumpuan animasi** | Canvas 2D + GSAP (ScrollTrigger) + SVG/Lottie ringan |
-| **Signature interaction** | Tiga demo hidup: agen RL di gridworld, evolusi Genetic Algorithm, dan Gantt job-shop yang menjadwal ulang saat gangguan |
+| **Signature interaction** | Tiga demo hidup: agen RL di gridworld, evolusi Genetic Algorithm, dan pencarian rute metaheuristik (TSP) |
 | **Stack** | Vite + TypeScript + Vanilla (tanpa framework berat), Tailwind CSS, GSAP, deploy ke GitHub Pages/Vercel |
-| **Bahasa** | Indonesia + Inggris (toggle) |
+| **Bahasa** | Indonesia + Inggris (toggle, dua-duanya wajib) |
+| **Topik tesis** | **Tidak dipublikasikan.** Cukup ditulis "sedang studi S2 Master of Computer Science, UGM" |
 
 ---
 
@@ -22,7 +24,7 @@
 
 ### 1.1 Catatan penting soal identitas dan ejaan
 
-Nama yang ditulis sebagai *"Steven Prasetya Krismawan"* hampir tidak menghasilkan temuan yang cocok. Semua sumber yang **terverifikasi** memakai ejaan **"Stephen Prasetya Chrismawan"** (handle GitHub `stephenprasetyachrismawan`, nama yang sama dengan pemilik repo ini). **Pastikan ejaan mana yang ingin dipakai di portfolio.** Rencana ini memakai ejaan yang muncul di sumber resmi.
+Nama yang ditulis sebagai *"Steven Prasetya Krismawan"* hampir tidak menghasilkan temuan yang cocok. Semua sumber yang **terverifikasi** memakai ejaan **"Stephen Prasetya Chrismawan"** (handle GitHub `stephenprasetyachrismawan`). **Keputusan pemilik: ejaan resmi yang dipakai adalah Stephen Prasetya Chrismawan.** Metadata SEO menyertakan variasi *"Steven Prasetya Krismawan"* agar tetap mudah ditemukan lewat pencarian.
 
 **Bukan Anda (jangan dimasukkan ke portfolio):**
 
@@ -43,17 +45,17 @@ Nama yang ditulis sebagai *"Steven Prasetya Krismawan"* hampir tidak menghasilka
 
 ### 1.3 Yang belum bisa diverifikasi (mohon dilengkapi)
 
-1. **Halaman LinkedIn dan Google Scholar** tidak bisa dibuka otomatis, jadi riwayat kerja, gelar terbaru, dan daftar lengkap publikasi belum terbaca.
-2. **Urutan penulis dan DOI** artikel IJRCS belum terkonfirmasi. Peran Anda sebagai penulis (pertama/kedua/dst.) harus diisi sendiri.
-3. **Studi lanjut di UGM**: ada indikasi (email `mail.ugm.ac.id`) dan repo `dfjsp_1_from_article`, `thesis-writing-skills`, `My-Lovely_thesis` mengarah ke riset *Dynamic Flexible Job Shop Scheduling* dengan RL. Isi repo tidak bisa saya baca (di luar cakupan sesi), jadi **jangan menulis klaim riset tesis** di portfolio sebelum Anda menyetujui teksnya.
-4. **Tempat kerja / pengalaman industri Odoo**: repo `custom_odoo_skills`, `odoo-task-mcp`, `airflow-dbt-example`, `Cogstack-TestCase`, dan `BCATestCodingStephen` menunjukkan aktivitas, tetapi bukan jabatan atau perusahaan.
-5. **Minat Reinforcement Learning dan Metaheuristik**: minat Anda tercermin kuat dari skripsi (GA), repo `Genetic-Algorithm`, dan `dfjsp_*`. Belum ada publikasi RL yang terverifikasi, jadi bagian RL ditampilkan sebagai *"Research Interest / In Progress"*, bukan hasil terbit.
+1. **Halaman LinkedIn dan Google Scholar** tidak bisa dibuka otomatis (LinkedIn menolak dengan HTTP 999). Pemilik menyatakan data studi dan pengalaman "sesuai LinkedIn", jadi **teks final untuk Timeline dan pengalaman Odoo perlu disalin dari LinkedIn** (judul jabatan, perusahaan, periode). Sampai itu tersedia, Timeline memakai data placeholder yang ditandai `TODO`.
+2. **Artikel IJRCS**: pemilik menyatakan sebagai **penulis pertama**. Tetapi hasil pencarian mencantumkan Mulki Indana Zulfa sebagai penulis pertama di halaman artikel. Perbedaan ini bisa karena urutan yang salah terbaca oleh mesin pencari, tetapi **cek PDF terbit sebelum sitasi dipublikasikan**, dan salin sitasi serta DOI persis seperti tertulis di sana.
+3. **Studi lanjut**: ditulis hanya sebagai *"Mahasiswa S2 Master of Computer Science, Universitas Gadjah Mada"* (sesuai LinkedIn). **Topik tesis tidak ditulis** dan repo terkait tesis tidak ditampilkan.
+4. **Pengalaman industri Odoo**: repo `custom_odoo_skills`, `odoo-task-mcp`, `airflow-dbt-example`, dan `Cogstack-TestCase` menunjukkan aktivitas teknis, tetapi bukan jabatan atau perusahaan. Ambil dari LinkedIn (poin 1).
+5. **Minat Reinforcement Learning dan Metaheuristik**: tercermin dari skripsi (GA) dan repo `Genetic-Algorithm`. Belum ada publikasi RL yang terverifikasi, jadi RL ditampilkan sebagai *"Research Interest"* lewat demo interaktif, bukan sebagai hasil terbit.
 
 ### 1.4 Aspek privasi
 
-- Keterlibatan di komunitas gereja (`bible-ppt`, `ppt2liturgi`, GKJ Cilacap Utara) menyangkut data agama. **Default: tidak ditampilkan.** Tampilkan hanya jika Anda memilihnya, misalnya sebagai proyek *"multimedia & tooling untuk komunitas"* tanpa menyebut afiliasi.
+- Keterlibatan di komunitas gereja (`bible-ppt`, `ppt2liturgi`, GKJ Cilacap Utara): **keputusan pemilik: tidak ditampilkan.**
 - Akun Instagram/Facebook: tidak dimasukkan.
-- Repo tugas kuliah (`H1D021025-*`, `Tugas2Praktikum2024`, dll.) memuat NIM. **Jangan ditautkan.**
+- Repo tugas kuliah (`H1D021025-*`, `Tugas2Praktikum2024`, dll.) memuat NIM dan nama lengkap di deskripsi. Pemilik mengizinkan repo publik tampil, tetapi **rekomendasi: repo tugas kuliah tetap disaring** karena nilai portfolionya rendah dan memuat NIM. Pemilik dapat membalik keputusan ini di §6.3.
 
 ---
 
@@ -81,7 +83,7 @@ Satu halaman *single-page* dengan navigasi anchor, mempertahankan enam bagian si
 | 1 | **Hero / Origin** | Nama, tagline, foto profil, CTA (*Lihat Proyek*, *Unduh CV*) | Grid 2D interaktif: agen kecil mengikuti kursor lalu "belajar" jalur ke tujuan; teks muncul per huruf |
 | 2 | **About** | Cerita singkat, statistik (repo, tahun, publikasi), skill | Counter naik saat masuk viewport, kartu foto *tilt* |
 | 3 | **Build (Odoo & Software)** | Proyek Odoo, web, mobile, data engineering | Kartu proyek dengan *hover-reveal* dan filter animasi |
-| 4 | **Research** | Skripsi GA, artikel IJRCS, minat RL dan DFJSP | Demo GA dan RL (lihat §5) |
+| 4 | **Research** | Skripsi S1 (GA), artikel IJRCS (penulis pertama), minat RL dan metaheuristik, status S2 UGM | Demo GA, RL, dan TSP (lihat §5) |
 | 5 | **Systems / Lab** | Tiga demo interaktif dalam satu panel tab | Canvas 2D real-time |
 | 6 | **Apps** | Aplikasi lengkap (FinJumper, WareHouse-Koperasi, PDFHolmes, dll.) | Carousel horizontal dengan *scroll pinning* |
 | 7 | **Timeline** | Pendidikan, riset, pekerjaan | Garis waktu yang tergambar mengikuti scroll (SVG *stroke-dashoffset*) |
@@ -147,11 +149,12 @@ Ketiganya ditulis dengan **Canvas 2D murni** (tanpa library ML) agar ringan dan 
 - Perbandingan **GA klasik vs Greedy-Guided (half-greedy)**: dua panel berdampingan, kurva konvergensi ditampilkan langsung. Ini menerjemahkan skripsi dan artikel IJRCS Anda menjadi cerita visual.
 - Kontrol: ukuran populasi, laju mutasi, inisialisasi greedy (0 / 50 / 100%).
 
-**C. Dynamic Rescheduling: Gantt job-shop**
+**C. Metaheuristik: pencarian rute (Traveling Salesman Problem)**
 
-- Gantt chart mesin × waktu dengan operasi berwarna.
-- Tombol *"Inject disruption"* (mesin rusak / job baru): jadwal **bergeser dan diperbaiki** dengan animasi, dibandingkan dengan aturan sederhana (misalnya SPT, FIFO).
-- Peringatan jujur di UI: *"Demo ilustratif, bukan hasil tesis"* sampai hasil riset resmi tersedia.
+- Kota acak di kanvas; klik untuk menambah/memindah kota.
+- Pilih algoritma: **Simulated Annealing**, **Ant Colony Optimization**, atau **2-opt**. Rute terbaik digambar ulang saat membaik, dan panel di samping menampilkan jarak terbaik per iterasi.
+- Ini sengaja **tidak memakai topik tesis** (sesuai keputusan pemilik); TSP adalah contoh metaheuristik klasik yang mudah dipahami pengunjung awam.
+- Label UI: *"Demo ilustratif untuk metaheuristik."*
 
 ### 5.3 Prinsip kinerja dan aksesibilitas
 
@@ -185,9 +188,11 @@ Diambil dari 46 repo publik. Dikelompokkan dan diprioritaskan; **repo tugas kuli
 
 ### 6.3 Perlu keputusan Anda
 
-- `My-Lovely_thesis`, `dfjsp_1_from_article`, `thesis-writing-skills`: terkait riset tesis. Tampilkan hanya jika Anda setuju dan isinya siap publik.
-- `bible-ppt`, `ppt2liturgi`: lihat §1.4.
-- `BCATestCodingStephen`: tes seleksi perusahaan, sebaiknya disembunyikan.
+Kebijakan: **repo publik boleh tampil**, dengan pengecualian berikut (bisa diubah pemilik):
+
+- **Tidak ditampilkan (keputusan pemilik):** tiga repo terkait tesis (`My-Lovely_thesis`, `thesis-writing-skills`, dan satu repo lain; daftar lengkap disimpan di `hidden` pada `projects.json`), `bible-ppt`, `ppt2liturgi` (komunitas).
+- **Tidak ditampilkan (rekomendasi):** repo tugas kuliah berNIM (`H1D021025-*`, `Tugas2Praktikum2024`, `MobileLab*`, `*_UTSMobile_*`, dan sejenisnya) serta `BCATestCodingStephen` (tes seleksi perusahaan).
+- **Otomatis mengikuti aturan di atas:** repo baru pada masa depan tampil kecuali masuk daftar `hidden` di `projects.json`.
 
 ### 6.4 Cara data proyek diambil
 
@@ -249,7 +254,7 @@ Semua gambar berada di `public/assets/images/`. Selama belum ada gambar asli, di
 │   ├── demos/
 │   │   ├── rl-gridworld/
 │   │   ├── ga-evolution/
-│   │   └── job-shop-gantt/
+│   │   └── tsp-metaheuristic/
 │   ├── data/              # projects.json, publications.json, timeline.json
 │   └── i18n/{id,en}.json
 ├── tests/
@@ -262,13 +267,13 @@ Semua gambar berada di `public/assets/images/`. Selama belum ada gambar asli, di
 
 | Fase | Isi | Hasil |
 |---|---|---|
-| **0. Konfirmasi** | Jawab pertanyaan di §11, pilih proyek dan gambar | Konten final |
+| **0. Konfirmasi** | Keputusan pemilik sudah masuk (§11). Sisa: salin data LinkedIn dan cek sitasi IJRCS | Konten final |
 | **1. Fondasi** | Setup Vite/TS/Tailwind, tema, navigasi, tata letak responsif | Kerangka situs berjalan |
 | **2. Konten statis** | Hero, About, Timeline, Contact, data proyek dan publikasi, slot gambar placeholder | Portfolio lengkap tanpa demo |
 | **3. Animasi global** | Latar jaringan, scroll reveal, kursor, transisi, loader | Situs terasa "hidup" |
-| **4. Demo signature** | Demo A (RL), B (GA), C (Gantt) | Bagian Research/Lab interaktif |
-| **5. Polesan** | i18n, mode gelap/terang, SEO, OG image, aksesibilitas | Siap publik |
-| **6. QA dan rilis** | Lighthouse ≥ 90, uji lintas browser, deploy, domain `stevewithcode.net` | Live |
+| **4. Demo signature** | Demo A (RL), B (GA), C (TSP metaheuristik) | Bagian Research/Lab interaktif |
+| **5. Polesan** | i18n ID/EN, mode gelap/terang, SEO (termasuk variasi ejaan nama), OG image, aksesibilitas, halaman CV (§12) | Siap publik |
+| **6. QA dan rilis** | Lighthouse ≥ 90, uji lintas browser, deploy, **pindahkan domain `stevewithcode.net`** ke situs baru dengan pengalihan dari URL lama (§13) | Live |
 
 ---
 
@@ -282,17 +287,35 @@ Semua gambar berada di `public/assets/images/`. Selama belum ada gambar asli, di
 
 ---
 
-## 11. Pertanyaan Terbuka untuk Anda
+## 11. Keputusan Pemilik
 
-1. Ejaan nama di portfolio: **Stephen Prasetya Chrismawan** (sesuai sumber resmi) atau **Steven Prasetya Krismawan**?
-2. Apakah portfolio ini **menggantikan** `stevewithcode.net` atau berdiri sendiri (mis. sebagai versi 2D)?
-3. Status studi lanjut (UGM) dan topik tesis yang boleh dipublikasikan?
-4. Pekerjaan / pengalaman Odoo (perusahaan, tahun, peran) yang ingin ditampilkan?
-5. Peran Anda pada artikel IJRCS 2024 (urutan penulis) dan DOI-nya?
-6. Repo mana yang boleh dan tidak boleh tampil (lihat §6.3)?
-7. Apakah kegiatan komunitas (multimedia gereja) ingin ditampilkan?
-8. Bahasa utama: Indonesia, Inggris, atau dua-duanya?
-9. Adakah CV (PDF) yang ingin disediakan untuk diunduh?
+| # | Pertanyaan | Keputusan |
+|---|---|---|
+| 1 | Ejaan nama | **Stephen Prasetya Chrismawan** |
+| 2 | Hubungan dengan `stevewithcode.net` | **Menggantikan** situs lama |
+| 3 | Studi lanjut | Cukup *"Mahasiswa S2 Master of Computer Science, UGM"*, **tanpa topik tesis** |
+| 4 | Pengalaman Odoo | Mengikuti LinkedIn (data perlu disalin, lihat §1.3) |
+| 5 | Peran di artikel IJRCS | Penulis pertama (verifikasi terhadap PDF, lihat §1.3) |
+| 6 | Repo yang tampil | Repo publik boleh tampil, dengan penyaringan di §6.3 |
+| 7 | Kegiatan komunitas gereja | **Tidak ditampilkan** |
+| 8 | Bahasa | **Indonesia dan Inggris** |
+| 9 | CV unduhan | Belum ada, akan dibuatkan (§12) |
+
+## 12. CV yang Dapat Diunduh
+
+Pemilik belum punya CV. Rencana:
+
+1. Halaman `/cv` di situs ini dibangun dari data yang sama dengan Timeline dan Publikasi (`timeline.json`, `publications.json`), lengkap dengan stylesheet `@media print`.
+2. Tombol *Unduh CV* menghasilkan PDF (dari halaman `/cv` lewat Playwright saat *build*) dan menyimpannya di `public/assets/cv/`.
+3. Sebelum data LinkedIn masuk, tombol menampilkan status *"CV segera hadir"* (nonaktif) agar tidak mengirim CV yang isinya kosong.
+4. CV tersedia dalam dua bahasa (ID/EN).
+
+## 13. Migrasi dari `stevewithcode.net`
+
+- Situs lama memiliki bagian Origin, Build, Research, Systems, Apps, Profile. Semuanya sudah terpetakan di §3, jadi tidak ada konten yang hilang.
+- Pertahankan URL lama yang mungkin sudah dibagikan (jika ada halaman selain beranda) dengan pengalihan 301 atau anchor yang sepadan.
+- Ambil dulu salinan konten situs lama (teks yang belum terbaca lengkap oleh riset ini) sebelum diganti, agar tidak ada teks penting yang terlewat.
+- Ganti domain hanya setelah situs baru lolos QA (Fase 6).
 
 ---
 
